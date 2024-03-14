@@ -118,7 +118,7 @@ for benchmark in BENCHMARKS:
                 error_ratio=np.multiply(error_ratio,100)
             
             
-                rmse = sqrt(MSE(y_test, y_pred))
+                rmse = MSE(y_test, y_pred)
                 mae = MAE(y_test, y_pred)
                 #print(loss)
                 Loss_RMSE.append(rmse)
